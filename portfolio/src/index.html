@@ -8,184 +8,192 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="logo">
-            <a href="#" class="logo__link">
-                <img src="logo.png" alt="" class="logo__link">
-            </a>
-        </div>
-        <div class="nav">
-            <ul class="nav__links">
-                <li class="nav__item"><a href="#">Skills</a></li>
-                <li class="nav__item"><a href="#">Portfolio</a></li>
-                <li class="nav__item"><a href="#">Video</a></li>
-                <li class="nav__item"><a href="#">Price</a></li>
-                <li class="nav__item"><a href="#">Contacts</a></li>
-            </ul>
-        </div>
-        <div class="switch-ing">
-            <button class="switch-ing__eng">eng</button>
-            <span class="switch-ing__slash">&#47</span>
-            <button class="switch-ing__ru">ru</button>
-        </div>
-    </div>
+<header class="header">
+        <div class="container header-container">
+                <a href="#" class="logo">
+                    <img src="assets/image/Vector.svg" alt="logo" class="logo__img">
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Video</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Price</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="switch-ing">
+                    <div class="switch-container">
+                        <span class="lang-en span-active">en</span>
+                        <span class="switch-ing__slash">&#47</span>
+                        <span class="lang-ru">ru</span>
+                    </div>
+                </div>
+            </div>
 </header>
 <main>
-    <div class="container">
+    <div class="container hero-container">
         <section class="section hero-section">
             <h1 class="hero__title">Alexa Rise</h1>
             <p class="hero__text">
                 Save sincere emotions, romantic feelings
-                and happy moments
-                of life together with professional
+                and <br>happy moments
+                of life together with professional<br>
                 photographer Alexa Rise
             </p>
-            <button class="hero__btn">Hire me</button>
+            <button class="button hero-btn">Hire me</button>
         </section>
-        <div class="skills">
-            <div class="skills--title_wrapper">
-                    <h2 class="skills__title">Skills</h2>
-                <div class="skill-section-title-line"></div>
-            </div>
+    </div>
+        <div class="container">
             <section class="section skills-section" id="skills">
-                <h2 class="section-title" data-i18="skills">Skills</h2>
+                <div class="title-wrapper">
+                    <h2 class="title section-title" data-i18="skills">Skills</h2>
+                </div>
                 <ul class="skills-list">
-                    <li class="skills-item item-camera">
-                        <h4 class="skills-title" data-i18="skill-title-1">Digital photography</h4>
-                        <p class="skills-description" data-i18="skill-text-1">High-quality photos in the studio and on the nature</p>
+                    <li class="skill-item item-camera">
+                        <h4 class="skill-title" data-i18="skill-title-1">Digital photography</h4>
+                        <p class="skill-description" data-i18="skill-text-1">High-quality photos in the studio and on the nature</p>
                     </li>
-                    <li class="skills-item item-video">
-                        <h4 class="skills-title" data-i18="skill-title-2">Video shooting</h4>
-                        <p class="skills-description" data-i18="skill-text-2">Capture your moments so that they always stay with you</p>
+                    <li class="skill-item item-video">
+                        <h4 class="skill-title" data-i18="skill-title-2">Video shooting</h4>
+                        <p class="skill-description" data-i18="skill-text-2">Capture your moments so that they always stay with you</p>
                     </li>
-                    <li class="skills-item item-image">
-                        <h4 class="skills-title" data-i18="skill-title-3">Retouch</h4>
-                        <p class="skills-description" data-i18="skill-text-3">I strive to make photography surpass reality</p>
+                    <li class="skill-item item-image">
+                        <h4 class="skill-title" data-i18="skill-title-3">Retouch</h4>
+                        <p class="skill-description" data-i18="skill-text-3">I strive to make photography surpass reality</p>
                     </li>
-                    <li class="skills-item item-mic">
-                        <h4 class="skills-title" data-i18="skill-title-4">Audio</h4>
-                        <p class="skills-description" data-i18="skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
+                    <li class="skill-item item-mic">
+                        <h4 class="skill-title" data-i18="skill-title-4">Audio</h4>
+                        <p class="skill-description" data-i18="skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
                     </li>
                 </ul>
             </section>
         </div>
-        <div class="portfilio">
+        <div class="container">
             <section class="section portfolio-section" id="portfolio">
-                <h2 class="portfolio-title">Portfolio</h2>
+                <div class="title-wrapper">
+                    <h2 class="title section-title" data-i18="portfolio" id="portfolio-title">Portfolio</h2>
+                </div>
                 <div class="buttons-portfolio">
-                    <button class="button-portfolio__btn" data-season="winter">Winter</button>
-                    <button class="button-portfolio__btn" data-season="spring">Spring</button>
-                    <button class="button-portfolio__btn" data-season="summer">Summer</button>
-                    <button class="button-portfolio__btn" data-season="autumn">Autumn</button>
+                    <button class="portfolio__btn" data-season="winter">Winter</button>
+                    <button class="portfolio__btn" data-season="spring">Spring</button>
+                    <button class="portfolio__btn" data-season="summer">Summer</button>
+                    <button class="button hero-btn" data-season="autumn">Autumn</button>
                 </div>
                 <ul class="portfolio__list">
-                    <li class="portfolio__item"><img src="portfolio.img" alt="portfolio.img" class="portfolio__item"></li>
-                    <li class="portfolio__item"><img src="" alt="portfolio.img" class="portfolio__item"></li>
-                    <li class="portfolio__item"><img src="" alt="portfolio.img" class="portfolio__item"></li>
-                    <li class="portfolio__item"><img src="" alt="portfolio.img" class="portfolio__item"></li>
-                    <li class="portfolio__item"><img src="" alt="portfolio.img" class="portfolio__item"></li>
-                    <li class="portfolio__item"><img src="" alt="portfolio.img" class="portfolio__item"></li>
+                    <li class="portfolio__item"><img src="./assets/image/portfolio-img.png" alt="portfolio.img" class="portfolio__item"></li>
+                    <li class="portfolio__item"><img src="./assets/image/portfolio-img-1.png" alt="portfolio.img" class="portfolio__item"></li>
+                    <li class="portfolio__item"><img src="./assets/image/portfolio-img-2.png" alt="portfolio.img" class="portfolio__item"></li>
+                    <li class="portfolio__item"><img src="./assets/image/portfolio-img-3.png" alt="portfolio.img" class="portfolio__item"></li>
+                    <li class="portfolio__item"><img src="./assets/image/portfolio-img-4.png" alt="portfolio.img" class="portfolio__item"></li>
+                    <li class="portfolio__item"><img src="./assets/image/portfolio-img-5.png" alt="portfolio.img" class="portfolio__item"></li>
                 </ul>
             </section>
         </div>
+        <div class="container">
         <section class="section video-section" id="video">
-            <div class="video__title_wrapper">
-                <h2 class="video__title">Video</h2>
+            <div class="title-wrapper">
+                <h2 class="title section-title" data-i18="video">Video</h2>
             </div>
             <div class="video__content">
-                <picture class="video__picture">
-                    <source media= "(min-width:1440px)" srcset= "" class="video__picture_img" >
-                    <source media= "(min-width:1440px)" srcset= "" class="video__picture_img" >
-                    <img src="" alt="video__image" class="video__image">
+                <picture class="video__player">
+                    <source media= "(min-width:1440px)" srcset= "" class="video__player_img" >
+                    <source media= "(min-width:1440px)" srcset= "" class="video__player_img" >
+                    <img src="./assets/image/video-player.png" alt="video__image" class="video__image">
                     <button class="video__play"></button>
                 </picture>
             </div>
         </section>
-        <section class="section price-section" id="price">
-                <h2 class="price-section__title">Price</h2>
-                <div class="price-list">
-                    <h3 class="price-list__title">Standart</h3>
-                    <span class="price-list__price">500$</span>
-                    <ul class="price-card">
-                        <li class="price-card__discription1">One location</li>
-                        <li class="price-card__discription1">120 photos in color</li>
-                        <li class="price-card__discription1">12 photos in retouch</li>
-                        <li class="price-card__discription1">readiness 2-3 weeks</li>
-                        <li class="price-card__discription1">Make up, visage</li>
-                    </ul>
-                    <button class="price-list__btn">Order shooting</button>
-                </div>
-                <div class="price-list">
-                    <h3 class="price-list__title">Premium</h3>
-                    <span class="price-list__price">700$</span>
-                    <ul class="price-card">
-                        <li class="price-card__discription1">One or two locations</li>
-                        <li class="price-card__discription1">200 photos in color</li>
-                        <li class="price-card__discription1">20 photos in retouch</li>
-                        <li class="price-card__discription1">readiness 1-2 weeks</li>
-                        <li class="price-card__discription1">Make up, visage</li>
-                    </ul>
-                    <button class="price-list__btn">Order shooting</button>
-                </div>
-                <div class="price-list">
-                    <h3 class="price-list__title">Gold</h3>
-                    <span class="price-list__price">1000$</span>
-                    <ul class="price-card">
-                        <li class="price-card__discription1">Three locations or more</li>
-                        <li class="price-card__discription1">300 photos in color</li>
-                        <li class="price-card__discription1">50 photos in retouch</li>
-                        <li class="price-card__discription1">readiness 1 weeks</li>
-                        <li class="price-card__discription1">Make up, visage, hairstyle</li>
-                    </ul>
-                    <button class="price-list__btn">Order shooting</button>
-                </div>
-        </section>
-        <div class="contacts-container">
+        </div>
+        <div class="container">
+            <section class="section price-section" id="price">
+                    <div class="title-wrapper">
+                        <h2 class="title section-title" data-i18="price">Price</h2>
+                    </div>
+                    <div class="price-container">
+                        <div class="price-item">
+                            <h3 class="price-item__title">Standart</h3>
+                            <span class="price-item__price">500$</span>
+                            <ul class="price-card">
+                                <li class="price-card__discription">One location</li>
+                                <li class="price-card__discription">120 photos in color</li>
+                                <li class="price-card__discription">12 photos in retouch</li>
+                                <li class="price-card__discription">readiness 2-3 weeks</li>
+                                <li class="price-card__discription">Make up, visage</li>
+                            </ul>
+                            <button class="price-item__btn hero-btn">Order shooting</button>
+                        </div>
+                        <div class="price-item">
+                            <h3 class="price-item__title">Premium</h3>
+                            <span class="price-item__price">700$</span>
+                            <ul class="price-card">
+                                <li class="price-card__discription">One or two locations</li>
+                                <li class="price-card__discription">200 photos in color</li>
+                                <li class="price-card__discription">20 photos in retouch</li>
+                                <li class="price-card__discription">readiness 1-2 weeks</li>
+                                <li class="price-card__discription">Make up, visage</li>
+                            </ul>
+                            <button class="price-item__btn hero-btn">Order shooting</button>
+                        </div>
+                        <div class="price-item">
+                            <h3 class="price-item__title">Gold</h3>
+                            <span class="price-item__price">1000$</span>
+                            <ul class="price-card">
+                                <li class="price-card__discription">Three locations or more</li>
+                                <li class="price-card__discription">300 photos in color</li>
+                                <li class="price-card__discription">50 photos in retouch</li>
+                                <li class="price-card__discription">readiness 1 weeks</li>
+                                <li class="price-card__discription">Make up, visage, hairstyle</li>
+                            </ul>
+                            <button class="price-item__btn hero-btn">Order shooting</button>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <div class="container contacts-container">
             <section class="section contacts-section">
                 <h2 class="contacts__title">Contact me</h2>
-                <form action="contacts__form" action="#">
-                    <input class="contact__item" type="email" name="e-mail" placeholder="E-mail">
-                    <input class="contact__item" type="tel" name="phone" placeholder="Phone">
+                <form class="contacts__form" action="#">
+                    <input class="contact__item email-item" type="email" name="e-mail" placeholder="E-mail">
+                    <input class="contact__item phone-item" type="tel" name="phone" placeholder="Phone">
                     <textarea class="contact__item text-item" name="message" rows="4" cols="37" placeholder="Message"></textarea>
-                    <button class="contact__item button">Send message</button>
+                    <button class=" hero-btn">Send message</button>
                 </form>
             </section>
         </div>
-    </div>
 </main>
 <footer>
-    <container>
-        <div class="github-link">
-            <span></span>
-            <span>2022</span>
-            <a href="#">github</a>
+    <div class="container footer-container">
+        <div class="footer__github">
+            <span>&copy</span>
+            <span class="span-year">2022</span>
+            <a href="#" class="github__link">github</a>
         </div>
-        <div class="main-link">
-            <a href="#">Rolling Scopes School</a>
+        <div class="footer-link">
+            <a href="#" class="footer__link">Rolling Scopes School</a>
         </div>
         <div class="social-networks">
             <ul class="social-networks__links">
                 <li class="icon-item">
-                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="./assets/image/inst 1.svg" alt="logo__inst"></a>
                 </li>
                 <li class="icon-item">
-                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="./assets/image/fb 1.svg" alt="logo__facebook"></a>
                 </li>
                 <li class="icon-item">
-                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="./assets/image/tw 1.svg" alt="logo__tweeter"></a>
                 </li>
                 <li class="icon-item">
-                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="./assets/image/pinterest 1.svg" alt="logo__penterest"></a>
                 </li>
             </ul>
         </div>
-    </container>
+    </div>
 </footer>
 <script src="index.js"></script>
 </body>
