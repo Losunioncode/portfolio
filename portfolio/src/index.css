@@ -198,6 +198,11 @@ nav{
     line-height: 40px;
 }
 
+
+.hero-btn:hover{
+    color: #FFFFFF;
+}
+
 button{
     width: 250px;
     height: 55px;
@@ -343,6 +348,10 @@ button{
     text-align: center;
 }
 
+
+.portfolio__btn:hover{
+    color: #FFFFFF;
+}
 
 .portfolio__list{
     display: flex;
