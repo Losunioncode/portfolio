@@ -402,7 +402,7 @@ button{
 
 .title-wrapper{
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -499,7 +499,7 @@ button{
 
 .skill-item:nth-child(1){
     background-image: url("./assets/image/camera 1.svg");
-    background-size: 62px 50px;
+    background-size: 60px 50px;
     background-repeat: no-repeat;
 }
 
@@ -514,19 +514,19 @@ button{
 
 .skill-item:nth-child(2){
     background-image: url("./assets/image/video 1.svg");
-    background-size: 62px 50px;
+    background-size: 60px 50px;
     background-repeat: no-repeat;
 }
 
 .skill-item:nth-child(3){
     background-image: url("./assets/image/image 1.svg");
-    background-size: 62px 50px;
+    background-size: 60px 50px;
     background-repeat: no-repeat;
 }
 
 .skill-item:nth-child(4){
     background-image: url("./assets/image/mic 1.svg");
-    background-size: 62px 50px;
+    background-size: 60px 50px;
     background-repeat: no-repeat;
 }
 
@@ -600,7 +600,7 @@ button{
     position: absolute;
     background: url("./assets/image/video-player.svg");
     background-repeat: no-repeat;
-    width: 768px;
+    width: 1440px;
     background-position: center;
     height: 418px;
     border: none;
@@ -613,6 +613,20 @@ button{
 
 }
 
+
+@media (max-width: 768px){
+    .price-container{
+        display: flex;
+        justify-content:center;
+        position: relative;
+        flex-direction: column;   
+        align-items: center;
+        margin-top: 50px;   
+        height: 1700px;
+        gap: 10px;
+
+    }
+}
 .price-item{
     display: flex;
     justify-content: space-between;
@@ -629,9 +643,7 @@ button{
 .price-container{
     display: flex;
     justify-content: space-around;
-    position: relative;
     flex-wrap: nowrap;
-    height: 505px;
     margin-top: 60px;
     gap: 10px;
 }
@@ -716,6 +728,39 @@ button{
 
 }
 
+@media (max-width: 768px){
+    
+    .skill-item{
+       background-position: 109px 20px;
+        
+    }
+    
+
+    .skill-title{
+        width: 280px;
+        height: 40px;
+
+    }
+
+    
+    
+    .skill-item:nth-child(3){
+        margin-top: 75px
+    }
+
+    .skill-item:nth-child(4){
+        margin-top: 75px;
+    }
+
+    .skill-description{
+        width: 280px;
+        height:44px;
+        line-height: 21px;
+    }
+
+
+}
+
 .contacts-container{
     display: flex;
     justify-content: flex-end;
@@ -730,6 +775,9 @@ button{
 
 .contacts-section{
     margin-top: 60px;
+    height: 600px
+    position: relative;
+    
 }
 
 .contacts__title{
@@ -761,6 +809,8 @@ button{
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+
     /* identical to box height, or 200% */
 
 
@@ -778,6 +828,65 @@ button{
 
 }
 
+@media (max-width: 768px) {
+   .contacts-container{
+       display: flex;
+       align-content: center;
+       justify-content: center;
+       background-color: url("./assets/image/contacts2.jpg");
+       width: 768px;
+       background-size: auto 600px;
+       background-repeat: no-repeat;
+       
+   }
+
+   .contacts__title{
+        margin: 60px 110px auto;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 64px;
+       
+        /* identical to box height, or 200% */
+        
+        text-align: center;
+        
+        color: #BDAE82;        
+        
+   }
+
+   .btncontact{
+       margin: 8px auto 0;
+       height: 55px;
+   }
+   
+}
+
+@media (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+        position: relative;
+        margin-top: -28px;
+        height: 190px
+        
+        
+    }
+
+    .social-networks__links{
+        padding: 0;
+        
+    }
+
+    .footer__link{
+        line-height: 24px;
+    }
+
+    .social-networks{
+        margin-bottom: 28px;
+    }
+
+}
 .text-item{
     height: 100px;
     resize: none;
@@ -792,7 +901,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 190px;
 
 
 }
@@ -812,6 +921,7 @@ button{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+
     line-height: 50px;
     /* identical to box height, or 250% */
 }
@@ -846,7 +956,6 @@ button{
 .span-year{
     padding-left: 20px;
 }
-
 
 
 
